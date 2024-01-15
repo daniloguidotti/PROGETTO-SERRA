@@ -1,0 +1,49 @@
+/* CSS styles for the grid */
+
+@font-face {
+  font-family: 'Font';
+  src: url('/Super\ Comic.ttf') format('ttf'),
+       url('/Super\ Comic.ttf') format('ttf');
+}
+body{
+  background-color: rgb(163, 255, 224);
+}
+.container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.grid { 
+  font-family:'Font', sans-serif;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cell {
+  width: 115px;
+  height: 115px;
+  background-color: #c7ffdc;
+  border: 5px solid #010101;
+  cursor: pointer;
+}
+
+p{
+  font-size: large;
+}
+
+  /* Cambia il colore delle celle in base al turno del giocatore 
+  &.turno-x {
+    background-color: #ff0000;
+  }
+
+  &.turno-o {
+    background-color: #0000ff;
+  }*/
+
